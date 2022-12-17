@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Sales per year</h2>
+    <canvas id="myCanvas" width="300" height="200" style ="border:0px solid #c3c3c3"></canvas>
+    <script>
+        var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.moveTo(30, 0);
+ctx.lineTo(30, 100);
+ctx.lineTo(150, 100);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.lineWidth="2";
+ctx.fillStyle='Blue';
+ctx.fillRect(40,4,25,96 );
+ctx.stroke();
+
+ctx.beginPath();
+ctx.lineWidth="2";
+ctx.fillStyle='red';
+ctx.fillRect(80,20,25,80);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.lineWidth="2";
+ctx.fillStyle='green';
+ctx.fillRect(120,40,25,60);
+ctx.stroke();
+
+</script>
+</body>
+</html>

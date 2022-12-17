@@ -1,0 +1,69 @@
+//Question 1 and 2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="300" height="200" style ="border:0px solid #c3c3c3"></canvas>
+    <script>
+        var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+// Red rectangle
+ctx.beginPath();
+ctx.lineWidth = "1";
+ctx.strokeStyle = "red";
+ctx.rect(5, 5, 180, 140);
+ctx.stroke();
+
+// Green rectangle
+ctx.beginPath();
+ctx.lineWidth = "20";
+ctx.strokeStyle = "green";
+ctx.roundRect(160, 40, 60, 120,[1,1,1,1,]);
+ctx.stroke();
+
+// Blue rectangle
+ctx.beginPath();
+ctx.lineWidth = "10";
+ctx.strokeStyle = "blue";
+ctx.roundRect(100, 100, 170, 80,[1,1,1,1]);
+ctx.stroke();
+
+
+    </script>
+    <canvas id="myCanvas1" width="500" height="300" style ="border:1px solid #c3c3c3"></canvas>
+    <script>
+        var c = document.getElementById("myCanvas1");
+var ctx = c.getContext("2d");
+// circle
+// ctx.beginPath();
+// ctx.lineWidth ="1";
+ctx.fillStyle = 'red';
+ctx.arc(260,120,60,0,2*Math.PI);
+ctx.fill();
+
+// Que:2
+//square
+ctx.beginPath();
+ctx.lineWidth="2";
+ctx.fillStyle='lightgreen';
+ctx.fillRect(60,5,100,100);
+ctx.stroke();
+
+//Tringle
+ctx.fillStyle='blue';
+ctx.beginPath();
+ctx.moveTo(190,5);
+ctx.lineTo(100,80);
+ctx.lineTo(280,80);
+ctx.fill();
+
+</script>
+</script>
+</body>
+</html>
